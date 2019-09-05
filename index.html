@@ -105,8 +105,102 @@
     </div>
 
     <div class="section fp-auto-height" id="section3">
-        <div class="myContent" style="height:1450px;">
-            <h2>Projects that<br>have been involved</h2>
+        <div class="myContent">
+            <h2>Now, let's look at<br>my career and ability.</h2>
+
+            <div class="blog-slider">
+                <div class="blog-slider__wrp swiper-wrapper">
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="img/about-1.jpg" alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">about me no.1</span>
+                            <div class="blog-slider__title">Publishing</div>
+                            <div class="blog-slider__text">퍼블리싱 경력은 4년차를 향해 달려가고 있습니다.<br/>항상 마크업에 대해 준수를 잘하고 있는지, 재사용성에 대해 고려를 얼마나 했는지에 대해 고민하고 있답니다.</div>
+                            <a href="#" class="blog-slider__button">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="img/about-2.jpg" alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">about me no.2</span>
+                            <div class="blog-slider__title">UI Development</div>
+                            <div class="blog-slider__text">자기계발에 있어서 느리지만 꾸준히 진행하고 있습니다.<br/>새로운 UI 또는 인터랙션을 공부하고 활용하여 소스로 가지고 있거나 실제로 적용해보기도 합니다.</div>
+                            <a href="#" class="blog-slider__button">READ MORE</a>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="img/about-3.jpg" alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">about me no.3</span>
+                            <div class="blog-slider__title">Design</div>
+                            <div class="blog-slider__text">산업디자인 전공 후 현재는 퍼블리셔로 일하고 있지만<br/>디자인에 대한 열정과 관심을 꾸준히 이어가고 있습니다. behance나 핀터레스트에서 디자인 트렌드를 읽고 따라해보기도 합니다.</div>
+                            <a href="#" class="blog-slider__button">READ MORE</a>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="img/about-4.jpg" alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">about me no.4</span>
+                            <div class="blog-slider__title">Strong Physical strength</div>
+                            <div class="blog-slider__text">일에 대한 노력과 열정에는 튼튼한 체력이 밑바탕되어야 한다고<br/>생각합니다. 저녁에 산책과 자전거를 타기를 꾸준히 하며 체력은 물론 스트레스도 풀고 있답니다.</div>
+                            <a href="#" class="blog-slider__button">READ MORE</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="blog-slider__pagination"></div>
+            </div>
+
+            <div class="my-history" style="display:none;">
+                <div class="grid-row">
+                    <div class="grid first"><span class="past">Past</span></div>
+                    <div class="grid"></div>
+                    <div class="grid"></div>
+                    <div class="grid"></div>
+                    <div class="grid"></div>
+                    <div class="grid"></div>
+                    <div class="grid"></div>
+                    <div class="grid"></div>
+                    <div class="grid"></div>
+                    <div class="grid"></div>
+                    <div class="grid"><span class="present">Present</span></div>
+                    <div class="grid last"><span class="future">Future</span></div>
+                </div><!--grid layout-->
+
+                <div class="box-row">
+                    <div class="box box_1 blue">University</div>
+                    <div class="box box_2 yellowGreen">My first job,  UNEEDCOMMS<br>web designer & publisher</div>
+                    <div class="box box_3 skyBlue">Second job,<br>Clearfix Publisher & Planner</div>
+                    <div class="box box_4 red">~ing<br>Publisher</div>
+                    <div class="box box_5 orange">Web Portfolio<br>Training</div>
+                    <div class="box box_6 skyBlue">Web<br>Design</div>
+                    <div class="box box_7 yellowGreen">ddanzi<br>web<br>renew</div>
+                    <div class="box box_8 yellow"><span>cj onmart<br>web renew</span></div>
+                    <div class="box box_9 yellow">English<br>Design Certificate</div>
+                    <div class="box box_10 pink">Mobile Publishing,<br>App Design</div>
+                    <div class="box box_11 pastelYellow">remarkvill<br>app<br>renew</div>
+                    <div class="box box_12 mint">T world Direct<br>operational<br>maintenance</div>
+                    <div class="box box_13 red">intermd<br>web<br>renew</div>
+                    <div class="box box_14 violet">movist<br>web<br>renew</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="con">
+                <h4>Growing Adventurer! Publisher_KSY</h4>
+                <p>Thank you for your attention.<br>I'll always show you how to improve!</p>
+                <p class="last">Call me <span>anytime!</span></p>
+            </div>
         </div>
     </div>
 
@@ -134,6 +228,20 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+    });
+
+    var swiper = new Swiper('.blog-slider', {
+        spaceBetween: 30,
+        effect: 'fade',
+        loop: true,
+        mousewheel: {
+            invert: false,
+        },
+        // autoHeight: true,
+        pagination: {
+            el: '.blog-slider__pagination',
+            clickable: true,
+        }
     });
 </script>
 </body>
